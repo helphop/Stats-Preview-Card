@@ -1,0 +1,18 @@
+// --------------------------------
+
+// Basic Style - Essential CSS rules and utility classes
+
+// --------------------------------
+
+@forward 'global-styles/breakpoints';
+@forward 'global-styles/mixins';
+
+@use 'global-styles/reset';
+@use 'global-styles/breakpoints';
+@use 'global-styles/mixins';
+@use 'global-styles/colors';
+@use 'global-styles/spacing';
+@use 'global-styles/typography';
+@use 'global-styles/z-index';
+@use 'global-styles/visibility';
+

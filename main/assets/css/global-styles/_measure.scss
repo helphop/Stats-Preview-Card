@@ -1,0 +1,23 @@
+:root {
+  --measure: 48ch;
+}
+
+* {
+  max-inline-size: var(--measure);
+}
+
+html,
+body,
+div,
+header,
+nav,
+main,
+footer,
+h1,
+ul {
+  max-inline-size: none;
+}
+
+.max-inline-size\:measure {
+  max-inline-size: var(--measure);
+}
