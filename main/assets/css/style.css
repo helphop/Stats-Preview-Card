@@ -131,10 +131,10 @@ h6 {
   --color-blue-dark-h: 233;
   --color-blue-dark-s: 50%;
   --color-blue-dark-l: 3%;
-  --color-blue: hsl(233, 50%, 7%);
-  --color-blue-h: 233;
-  --color-blue-s: 50%;
-  --color-blue-l: 7%;
+  --color-blue: hsl(246, 38%, 16%);
+  --color-blue-h: 246;
+  --color-blue-s: 38%;
+  --color-blue-l: 16%;
   --color-blue-light: hsl(233, 50%, 17%);
   --color-blue-light-h: 233;
   --color-blue-light-s: 50%;
@@ -3783,4 +3783,9 @@ html:not(.js) .no-js\:is-hidden {
 
 .max-height-100vh {
   max-height: 100vh;
+}
+
+.home {
+  display: grid;
+  place-content: center;
 }
