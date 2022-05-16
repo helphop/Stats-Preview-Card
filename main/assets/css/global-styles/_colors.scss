@@ -14,11 +14,11 @@
   @include defineColorHSL(--color-accent-light, 277, 64%, 71%);
   @include defineColorHSL(--color-accent-lighter, 277, 64%, 81%);
 
-  @include defineColorHSL(--color-blue-darker, 233, 50%, 0%);
-  @include defineColorHSL(--color-blue-dark, 233, 50%, 3%);
-  @include defineColorHSL(--color-blue, 246, 38%, 16%);
-  @include defineColorHSL(--color-blue-light, 233, 50%, 17%);
-  @include defineColorHSL(--color-blue-lighter, 233, 50%, 27%);
+  @include defineColorHSL(--color-blue-darker, 246, 50%, 0%);
+  @include defineColorHSL(--color-blue-dark, 246, 50%, 6%);
+  @include defineColorHSL(--color-blue, 246, 38%, 16%); //dark background
+  @include defineColorHSL(--color-blue-light, 246, 50%, 26%);
+  @include defineColorHSL(--color-blue-lighter, 246, 50%, 36%);
 
   @include defineColorHSL(--color-black, 204, 28%, 7%);
   @include defineColorHSL(--color-white, 0, 0%, 100%);
