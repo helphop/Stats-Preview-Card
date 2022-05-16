@@ -1,4 +1,42 @@
 .home {
   display: grid;
   place-content: center;
+  padding-inline: var(--space-md);
+
+  .wrapper {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    max-width: 69rem;
+  }
+
+  .header-image {
+    position: relative;
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      inset: 0;
+      z-index: 1;
+    }
+    &::before {
+      background-color: hsl(277 55% 50% / 1);
+      mix-blend-mode: multiply;
+    }
+    &::after {
+      background-color: hsl(277 20% 18% / 1);
+      mix-blend-mode: screen;
+    }
+
+
+  }
+  .content {
+    padding: var(--space-lg);
+    text-align: center;
+  }
+
+  .details > .stack  {
+    --stack-space: var(--space-4xs);
+  }
 }
+

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* -----Begin Reset----- */
 /* Box sizing rules */
 *,
@@ -69,9 +70,6 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
   /* optional */
 }
 
@@ -83,25 +81,25 @@ h6 {
 */
 /* -----End Reset----- */
 :root, [data-theme=default] {
-  --color-primary-darker: hsl(246, 68%, 0%);
+  --color-primary-darker: hsl(246, 38%, 0%);
   --color-primary-darker-h: 246;
-  --color-primary-darker-s: 68%;
+  --color-primary-darker-s: 38%;
   --color-primary-darker-l: 0%;
-  --color-primary-dark: hsl(246, 68%, 8%);
+  --color-primary-dark: hsl(246, 38%, 8%);
   --color-primary-dark-h: 246;
-  --color-primary-dark-s: 68%;
+  --color-primary-dark-s: 38%;
   --color-primary-dark-l: 8%;
-  --color-primary: hsl(246, 68%, 16%);
+  --color-primary: hsl(246, 38%, 16%);
   --color-primary-h: 246;
-  --color-primary-s: 68%;
+  --color-primary-s: 38%;
   --color-primary-l: 16%;
-  --color-primary-light: hsl(246, 68%, 26%);
+  --color-primary-light: hsl(246, 38%, 26%);
   --color-primary-light-h: 246;
-  --color-primary-light-s: 68%;
+  --color-primary-light-s: 38%;
   --color-primary-light-l: 26%;
-  --color-primary-lighter: hsl(246, 68%, 36%);
+  --color-primary-lighter: hsl(246, 38%, 36%);
   --color-primary-lighter-h: 246;
-  --color-primary-lighter-s: 68%;
+  --color-primary-lighter-s: 38%;
   --color-primary-lighter-l: 36%;
   --color-accent-darker: hsl(277, 64%, 41%);
   --color-accent-darker-h: 277;
@@ -219,26 +217,26 @@ h6 {
   --color-error-lighter-h: 342;
   --color-error-lighter-s: 89%;
   --color-error-lighter-l: 62%;
-  --color-bg-darker: hsl(210, 4%, 89%);
-  --color-bg-darker-h: 210;
-  --color-bg-darker-s: 4%;
-  --color-bg-darker-l: 89%;
-  --color-bg-dark: hsl(180, 3%, 94%);
-  --color-bg-dark-h: 180;
-  --color-bg-dark-s: 3%;
-  --color-bg-dark-l: 94%;
+  --color-bg-darker: hsl(233, 50%, 0%);
+  --color-bg-darker-h: 233;
+  --color-bg-darker-s: 50%;
+  --color-bg-darker-l: 0%;
+  --color-bg-dark: hsl(233, 50%, 4%);
+  --color-bg-dark-h: 233;
+  --color-bg-dark-s: 50%;
+  --color-bg-dark-l: 4%;
   --color-bg: hsl(233, 50%, 7%);
   --color-bg-h: 233;
   --color-bg-s: 50%;
   --color-bg-l: 7%;
-  --color-bg-light: hsl(180, 3%, 100%);
-  --color-bg-light-h: 180;
-  --color-bg-light-s: 3%;
-  --color-bg-light-l: 100%;
-  --color-bg-lighter: hsl(210, 4%, 100%);
-  --color-bg-lighter-h: 210;
-  --color-bg-lighter-s: 4%;
-  --color-bg-lighter-l: 100%;
+  --color-bg-light: hsl(233, 50%, 17%);
+  --color-bg-light-h: 233;
+  --color-bg-light-s: 50%;
+  --color-bg-light-l: 17%;
+  --color-bg-lighter: hsl(233, 50%, 27%);
+  --color-bg-lighter-h: 233;
+  --color-bg-lighter-s: 50%;
+  --color-bg-lighter-l: 27%;
   --color-contrast-lower: hsl(180, 1%, 84%);
   --color-contrast-lower-h: 180;
   --color-contrast-lower-s: 1%;
@@ -476,11 +474,11 @@ h6 {
 /* inter-900 - latin */
 @font-face {
   font-family: "Inter";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/inter-v11-latin/inter-v11-latin-900.eot");
+  font-style: bold;
+  font-weight: 700;
+  src: url("../fonts/inter-v11-latin/inter-v11-latin-700.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../fonts/inter-v11-latin/inter-v11-latin-900.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v11-latin/inter-v11-latin-900.woff2") format("woff2"), url("../fonts/inter-v11-latin/inter-v11-latin-900.woff") format("woff"), url("../fonts/inter-v11-latin/inter-v11-latin-900.ttf") format("truetype"), url("../fonts/inter-v11-latin/inter-v11-latin-900.svg#Inter") format("svg");
+  src: local(""), url("../fonts/inter-v11-latin/inter-v11-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v11-latin/inter-v11-latin-700.woff2") format("woff2"), url("../fonts/inter-v11-latin/inter-v11-latin7900.woff") format("woff"), url("../fonts/inter-v11-latin/inter-v11-latin-700.ttf") format("truetype"), url("../fonts/inter-v11-latin/inter-v11-latin-700.svg#Inter") format("svg");
   /* Legacy iOS */
 }
 :root {
@@ -522,6 +520,76 @@ body {
 mark {
   background-color: hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.2);
   color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: var(--heading-line-height);
+}
+
+:root {
+  --radius: 0.5rem;
+  --radius-sm: calc(var(--radius)/2);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius)*2);
+  --border-1: 1px;
+  --border-2: 2px;
+  --border-4: 4px;
+}
+
+:root {
+  --duration-fast: 200ms;
+  --duration-med: 300ms;
+  --duration-slow: 600ms;
+}
+
+:root {
+  --measure: 48ch;
+}
+
+* {
+  max-inline-size: var(--measure);
+}
+
+html,
+body,
+div,
+header,
+nav,
+main,
+footer,
+h1,
+ul {
+  max-inline-size: none;
+}
+
+.max-inline-size\:measure {
+  max-inline-size: var(--measure);
+}
+
+:root {
+  --shadow-xs: 0 0.1px 0.3px rgba(0, 0, 0, 0.06),
+    0 1px 2px rgba(0, 0, 0, 0.12);
+  --shadow-sm: 0 0.3px 0.4px rgba(0, 0, 0, 0.025),
+    0 0.9px 1.5px rgba(0, 0, 0, 0.05),
+    0 3.5px 6px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 0.9px 1.5px rgba(0, 0, 0, 0.03),
+    0 3.1px 5.5px rgba(0, 0, 0, 0.08),
+    0 14px 25px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 1.2px 1.9px -1px rgba(0, 0, 0, 0.014),
+    0 3.3px 5.3px -1px rgba(0, 0, 0, 0.038),
+    0 8.5px 12.7px -1px rgba(0, 0, 0, 0.085),
+    0 30px 42px -1px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 1.5px 2.1px -6px rgba(0, 0, 0, 0.012),
+    0 3.6px 5.2px -6px rgba(0, 0, 0, 0.035),
+    0 7.3px 10.6px -6px rgba(0, 0, 0, 0.07),
+    0 16.2px 21.9px -6px rgba(0, 0, 0, 0.117),
+    0 46px 60px -6px rgba(0, 0, 0, 0.2);
+  --inner-glow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.075);
+  --inner-glow-top: inset 0 1px 0.5px hsla(0, 0%, 100%, 0.075);
 }
 
 :root {
@@ -1256,6 +1324,18 @@ html:not(.js) .no-js\:is-hidden {
 
 .color-inherit {
   color: inherit;
+}
+
+.color-white {
+  color: hsla(var(--color-white-h), var(--color-white-s), var(--color-white-l), var(--color-o, 1));
+}
+
+.color-white-dark {
+  color: hsla(var(--color-white-dark-h), var(--color-white-dark-s), var(--color-white-dark-l), var(--color-o, 1));
+}
+
+.color-white-darker {
+  color: hsla(var(--color-white-dark-h), var(--color-white-dark-s), var(--color-white-dark-l), var(--color-o, 1));
 }
 
 .color-bg-darker {
@@ -2558,26 +2638,6 @@ html:not(.js) .no-js\:is-hidden {
   font-weight: var(--fw-black);
 }
 
-.color-dark-blue-darker {
-  color: hsla(var(--color-dark-blue-darker-h), var(--color-dark-blue-darker-s), var(--color-dark-blue-darker-l), var(--color-o, 1));
-}
-
-.color-dark-blue-dark {
-  color: hsla(var(--color-dark-blue-dark-h), var(--color-dark-blue-dark-s), var(--color-dark-blue-dark-l), var(--color-o, 1));
-}
-
-.color-dark-blue {
-  color: hsla(var(--color-dark-blue-h), var(--color-dark-blue-s), var(--color-dark-blue-l), var(--color-o, 1));
-}
-
-.color-dark-blue-light {
-  color: hsla(var(--color-dark-blue-light-h), var(--color-dark-blue-light-s), var(--color-dark-blue-light-l), var(--color-o, 1));
-}
-
-.color-dark-blue-lighter {
-  color: hsla(var(--color-dark-blue-lighter-h), var(--color-dark-blue-lighter-s), var(--color-dark-blue-lighter-l), var(--color-o, 1));
-}
-
 .font-primary {
   font-family: var(--font-primary);
 }
@@ -3785,7 +3845,264 @@ html:not(.js) .no-js\:is-hidden {
   max-height: 100vh;
 }
 
+.box {
+  padding: var(--s1);
+  border: var(--border-width, var(--border-1)) solid;
+  --color-light: var(--color-blue);
+  --color-dark: var(--color-white-dark);
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+.box * {
+  color: inherit;
+}
+
+.box.invert {
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
+
+.center {
+  box-sizing: content-box;
+  margin-inline: auto;
+  max-inline-size: var(--measure);
+}
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space, 1rem);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  /* 👇 must make sure that the parent has height: 100% */
+  min-block-size: 100%;
+  padding: 1rem;
+}
+
+.cover > * {
+  margin-block: 1rem;
+}
+
+.cover > :first-child:not(.centered) {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+
+.cover > :last-child:not(.centered) {
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.cover > .centered {
+  margin-block: auto;
+}
+
+.frame {
+  --n: 16;
+  --d: 9;
+  aspect-ratio: var(--n)/var(--d);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame > img,
+.frame > video {
+  inline-size: 100%;
+  block-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1rem;
+  /* 👇 brilliant in that it makes col 100% when smaller than 250px */
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+}
+
+.icon {
+  height: 0.75em;
+  height: 1cap;
+  width: 0.75em;
+  width: 1cap;
+}
+
+/* when first letter is lower case */
+.icon.with-lower-case {
+  width: 1ex;
+  height: 1ex;
+}
+
+/* goes on wrapper element that contains the text */
+.with-icon {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space, 0.5em);
+}
+
+/* for when we don't need any gap between the holding container and the imposter */
+.imposter {
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* when we want space between the content and the container */
+.imposter.contain {
+  --margin: 1rem;
+  overflow: auto;
+  max-inline-size: calc(100% - var(--margin) * 2);
+  max-block-size: calc(100% - var(--margin) * 2);
+}
+
+.reel {
+  border-width: var(--border-thin);
+  display: flex;
+  /* ↓ We only want horizontal scrolling */
+  overflow-x: auto;
+  /* just for clarity this is automatically set with overflow-y: hidden */
+  overflow-y: hidden;
+  block-size: auto;
+}
+
+.reel > * {
+  --margin-gap: var(--space-xs);
+  /* 👇 put margin on all sides of each element */
+  margin: var(--margin-gap);
+  /* 👇 remove the margin on the right side */
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+}
+
+/* Use pseudo element to add margin to the end of the reel */
+.reel::after {
+  content: "";
+  flex-basis: var(--margin-gap);
+  /* 👇 Default is 1 so needs to be overridden */
+  flex-shrink: 0;
+}
+
+.with-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+}
+
+.with-sidebar > :first-child {
+  flex-basis: 10rem;
+  flex-grow: 1;
+}
+
+.with-sidebar > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  /* 👇 contols when wrapping occurs */
+  min-inline-size: var(--min-inline-width, 50%);
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* may not be necessary if the reset removes margins */
+.stack > * + * {
+  /* only affects direct children */
+  /* for a balanced flow the default space should match the line-height */
+  -webkit-margin-before: var(--stack-space, var(--space-s-md));
+          margin-block-start: var(--stack-space, var(--space-s-md));
+}
+
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* 👇 when the columns become rows */
+  --threshold: 30rem;
+}
+
+.switcher > * {
+  flex-grow: 1;
+  /* 👇 holy albatross */
+  flex-basis: calc((var(--threshold) - 100%) * 999);
+}
+
+.switcher > * > * {
+  /* 👇 ensures the children inside a flex item will not
+  exceed the width of the parent (optional) */
+  max-inline-size: 100%;
+}
+
+/* 👇 Controls how many horizontal items per row
+    by switching when the number of flex items
+    equals the value x as in  n + x 👈  below
+    The number of columns is x - 1.
+*/
+/* Use one of these to control the number of items per row
+   by setting the value in a data attribute data-max-col
+*/
+.switcher[data-max-col="2"] > :nth-last-child(n+3), .switcher[data-max-col="2"] > :nth-last-child(n+3) ~ * {
+  flex-basis: 100%;
+}
+
+.switcher[data-max-col="3"] > :nth-last-child(n+4), .switcher[data-max-col="3"] > :nth-last-child(n+4) ~ * {
+  flex-basis: 100%;
+}
+
+.switcher[data-max-col="4"] > :nth-last-child(n+5), .switcher[data-max-col="4"] > :nth-last-child(n+5) ~ * {
+  flex-basis: 100%;
+}
+
+.switcher[data-max-col="5"] > :nth-last-child(n+6), .switcher[data-max-col="5"] > :nth-last-child(n+6) ~ * {
+  flex-basis: 100%;
+}
+
+.switcher[data-max-col="6"] > :nth-last-child(n+7), .switcher[data-max-col="6"] > :nth-last-child(n+7) ~ * {
+  flex-basis: 100%;
+}
+
 .home {
   display: grid;
   place-content: center;
+  padding-inline: var(--space-md);
+}
+.home .wrapper {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  max-width: 69rem;
+}
+.home .header-image {
+  position: relative;
+}
+.home .header-image::after, .home .header-image::before {
+  content: "";
+  position: absolute;
+  display: block;
+  inset: 0;
+  z-index: 1;
+}
+.home .header-image::before {
+  background-color: hsl(277deg, 55%, 50%);
+  mix-blend-mode: multiply;
+}
+.home .header-image::after {
+  background-color: hsl(277deg, 20%, 18%);
+  mix-blend-mode: screen;
+}
+.home .content {
+  padding: var(--space-lg);
+  text-align: center;
+}
+.home .details > .stack {
+  --stack-space: var(--space-4xs);
 }

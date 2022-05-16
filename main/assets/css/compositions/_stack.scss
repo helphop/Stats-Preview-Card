@@ -16,8 +16,9 @@
 .stack > * + * {
   /* only affects direct children */
   /* for a balanced flow the default space should match the line-height */
-  margin-block-start: var(--stack-space, var(--body-line-height));
+  margin-block-start: var(--stack-space, var(--space-s-md));
 }
+
 
 //separating stack elements
 
