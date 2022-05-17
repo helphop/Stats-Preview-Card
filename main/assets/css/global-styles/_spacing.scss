@@ -12,6 +12,7 @@
     --space-2xl: clamp(3.31rem, calc(3.25rem + 0.28vw), 3.50rem);
     --space-3xl: clamp(4.94rem, calc(4.83rem + 0.47vw), 5.25rem);
     --space-4xl: clamp(5.63rem, calc(5.49rem + 0.56vw), 6.00rem);
+    --space-5xl: clamp(8.00rem, calc(7.82rem + 0.75vw), 8.50rem);
 
     /* One-up pairs */
     --space-4xs-3xs: clamp(0.13rem, calc(0.08rem + 0.19vw), 0.25rem);
@@ -28,5 +29,8 @@
 
   /* Custom pairs */
     --space-l-3xl: clamp(1.88rem, calc(0.69rem + 5.07vw), 5.25rem); //for padding on blue box
+    --space-m-4xl: clamp(1.44rem, calc(-0.17rem + 6.85vw), 6.00rem);
+    --space-m-5xl: clamp(1.44rem, calc(-1.05rem + 10.61vw), 8.50rem);
+
     --component-padding: var(--space-md);
 }

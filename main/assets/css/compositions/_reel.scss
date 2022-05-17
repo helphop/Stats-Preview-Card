@@ -9,7 +9,7 @@
 }
 
 .reel > * {
-  --margin-gap: var(--s0)
+  --margin-gap: var(--space-xs);
   /* 👇 put margin on all sides of each element */
   margin: var(--margin-gap);
   /* 👇 remove the margin on the right side */
