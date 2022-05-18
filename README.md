@@ -14,7 +14,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -33,6 +33,28 @@ Could I apply CUBE CSS, Every Layout, Utopia and CodyHouse to make we developmen
 - Live Site URL: [https://helphop.github.io/Stats-Preview-Card/main/index.html](https://helphop.github.io/Stats-Preview-Card/main/index.html)
 
 ## My process
+I created scss files for layouts from Every Layout. I put these in a directory I called compositions under the css directory.
+
+I downloaded the utilities from CodyHouse. Then I created a utils folder in my project  under the css directory. I extracted the code into files for each type of utility i.e. _typography.scss for any utilities that dealt with typography.
+
+CodyHouse also provides a gulp.js file so I can compile my scss files. What's also nice is this gulp file uses PurgeCss so I can reduce the size of my final style.css.
+
+I created a directory called 'blocks' under the css directory.
+
+Finally I created a global-styles directory. I set the styles that the entire site will use and organized it into specific files, i.e. _breakpoints.scss, _reset.scss, _spacing.scss etc.
+
+I went to
+
+- [https://utopia.fyi/] (https://utopia.fyi/)
+
+and used their site to create the typography scales and spacing sizes. I copied the code into css/global-styles/_typography.scss and css/global-styles/_spacing.scss.
+
+I used
+
+- [https://google-webfonts-helper.herokuapp.com/fonts] (https://google-webfonts-helper.herokuapp.com/fonts)
+
+to download the Inter web font so I could self host the font.
+
 
 ### Built with
 
@@ -40,60 +62,29 @@ Could I apply CUBE CSS, Every Layout, Utopia and CodyHouse to make we developmen
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- CUBE CSS Methodology
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Gulp
+- PurgeCss
+- [Every Layout](https://every-layout.dev/layouts/) - Layout Primitives - C in CUBE CSS
+- [CodyHouse Utilities](https://codyhouse.co/ds/docs/framework/utilities) - CSS Framework - U in CUBE CSS
+- [Utopia](https://utopia.fyi/) - For fluid typography and spacing
 
 ### What I learned
+CUBE CSS methodology is easy to implement and is very helpful in organizing my code.
+One of more challenging aspects of programming is naming things. CUBE CSS helps by reducing
+the number of classes I need to use to create my layouts.
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned how to apply a good balance of utility classes without cluttering up the HTML.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
+I also found that using the primitive layout structures from Every Layout simplified the process of going from design to development. I find I am less overwhelmed with 'how am I going to do this' and more like 'oh that's a stack, and that's a switcher'.
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
+I need more practice in using this combination of technologies, especially with more challenging designs.
 ### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
+- [Every Layout](https://every-layout.dev/layouts/) - Layout Primitives - C in CUBE CSS
+- [CodyHouse Utilities](https://codyhouse.co/ds/docs/framework/utilities) - CSS Framework - U in CUBE CSS
+- [Utopia](https://utopia.fyi/) - For fluid typography and spacing
+- [CUBE CSS](https://cube.fyi/) - CUBE CSS methodology explained
 ## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@helphop](https://www.frontendmentor.io/profile/helphop)
