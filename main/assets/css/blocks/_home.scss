@@ -14,7 +14,7 @@
   }
 
   .with-sidebar > .header-image {
-    --sidebar-min-width: 28%;
+    --max-sidebar-width: 33.75rem;
   }
 
   .header-image {
@@ -42,7 +42,7 @@
   }
 
   .with-sidebar > .content {
-    --max-sidebar-width: 36rem;
+    --min-main-width: 40%;
   }
 
   .content {
@@ -63,7 +63,7 @@
   }
 
 
-  @include for-tablet-landscape-up {
+  @include for-desktop-up {
     .wrapper {
       text-align: left;
     }
