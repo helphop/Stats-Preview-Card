@@ -1,6 +1,6 @@
 # Frontend Mentor - Stats preview card component solution
 
-This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -19,29 +19,18 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
-
+This was an experiment to tie together several technologies and methodologies.
 ### The challenge
-
-Users should be able to:
-
-- View the optimal layout depending on their device's screen size
+Could I apply CUBE CSS, Every Layout, Utopia and CodyHouse to make we development easier and more organized.
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/helphop/Stats-Preview-Carde](https://github.com/helphop/Stats-Preview-Card)
+- Live Site URL: [https://helphop.github.io/Stats-Preview-Card/main/index.html](https://helphop.github.io/Stats-Preview-Card/main/index.html)
 
 ## My process
 
