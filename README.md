@@ -41,9 +41,9 @@ I created a directory called 'blocks' under the css directory.
 
 Finally I created a global-styles directory. I set the styles that the entire site will use and organized it into specific files, i.e. _breakpoints.scss, _reset.scss, _spacing.scss etc.
 
-I went to [utopia] (https://utopia.fyi/) and used their site to create the typography scales and spacing sizes. I copied the code into css/global-styles/_typography.scss and css/global-styles/_spacing.scss.
+I went to https://utopia.fyi/ and used their site to create the typography scales and spacing sizes. I copied the code into css/global-styles/_typography.scss and css/global-styles/_spacing.scss.
 
-I used [A web font helper] (https://google-webfonts-helper.herokuapp.com/fonts) to download the Inter web font so I could self host the font.
+I used https://google-webfonts-helper.herokuapp.com/fonts to download the Inter web font so I could self host the font.
 
 
 ### Built with
