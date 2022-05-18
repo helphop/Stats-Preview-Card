@@ -21,16 +21,18 @@
     --space-xs-s: clamp(0.69rem, calc(0.58rem + 0.47vw), 1.00rem);
     --space-s-md: clamp(0.94rem, calc(0.74rem + 0.85vw), 1.50rem);
     --space-md-lg: clamp(1.44rem, calc(1.24rem + 0.85vw), 2.00rem);
-    --space-lg-xl: clamp(1.88rem, calc(1.48rem + 1.69vw), 3.00rem); //space between h1 and text
+    --space-lg-xl: clamp(1.88rem, calc(1.48rem + 1.69vw), 3.00rem);
     --space-xl-2xl: clamp(2.81rem, calc(2.57rem + 1.03vw), 3.50rem);
-    --space-2xl-3xl: clamp(3.31rem, calc(2.63rem + 2.91vw), 5.25rem); //space between text and 10k+
+    --space-2xl-3xl: clamp(3.31rem, calc(2.63rem + 2.91vw), 5.25rem);
     --space-3xl-4xl: clamp(4.94rem, calc(4.56rem + 1.60vw), 6.00rem);
 
 
   /* Custom pairs */
-    --space-l-3xl: clamp(1.88rem, calc(0.69rem + 5.07vw), 5.25rem); //for padding on blue box
+    --space-l-3xl: clamp(1.88rem, calc(0.69rem + 5.07vw), 5.25rem);
+    --space-l-4xl: clamp(1.88rem, calc(0.42rem + 6.20vw), 6.00rem);
+    --space-m-3xl: clamp(1.44rem, calc(0.10rem + 5.73vw), 5.25rem);
     --space-m-4xl: clamp(1.44rem, calc(-0.17rem + 6.85vw), 6.00rem);
     --space-m-5xl: clamp(1.44rem, calc(-1.05rem + 10.61vw), 8.50rem);
-
+    --space-l-5xl: clamp(1.88rem, calc(-0.46rem + 9.95vw), 8.50rem);
     --component-padding: var(--space-md);
 }

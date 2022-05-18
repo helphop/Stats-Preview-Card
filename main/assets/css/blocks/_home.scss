@@ -20,14 +20,6 @@
   .header-image {
     position: relative;
     min-height: 240px;
-    picture {
-        height: 100%;
-      img {
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-      }
-    }
 
     &::after,
     &::before {
@@ -54,8 +46,8 @@
   }
 
   .content {
-    padding: var(--space-lg);
-    place-content: center;
+    padding-inline: var(--space-m-3xl);
+    padding-block: var(--space-l-3xl);
   }
 
   .details.switcher {
@@ -78,12 +70,8 @@
     .with-sidebar > .header-image {
       order: 1;
     }
-    .content {
-      padding-inline-start: 4rem;
-      p {
-        margin-inline: 0;
-      }
+    .content p {
+      margin-inline: 0;
     }
   }
 }
-
