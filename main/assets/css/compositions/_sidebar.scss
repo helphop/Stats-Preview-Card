@@ -3,13 +3,15 @@
   flex-wrap: wrap;
 }
 
+//The main section of the sidebar
+.with-sidebar> :first-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: var(--sidebar-min-width, 50%);
+}
+
 .with-sidebar > :last-child {
   flex-grow: 1;
   flex-basis: var(--max-sidebar-width, 20rem);
 }
 
-.with-sidebar > :first-child {
-  flex-basis: 0;
-  flex-grow: 999;
-  min-inline-size: var(--sidebar-min-width, 50%);
-}
