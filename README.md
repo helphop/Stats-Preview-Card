@@ -19,7 +19,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 ## Overview
 This was an experiment to tie together several technologies and methodologies.
 ### The challenge
-Could I apply CUBE CSS, Every Layout, Utopia and CodyHouse to make we development easier and more organized.
+Could I apply CUBE CSS, Every Layout, Utopia and CodyHouse to make web development easier and more organized.
 
 ### Screenshot
 
