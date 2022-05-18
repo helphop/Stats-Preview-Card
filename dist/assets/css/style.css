@@ -1,0 +1,629 @@
+@charset "UTF-8";
+/* -----Begin Reset----- */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+/* Better to use 100% on html and body for moblie devices */
+/* The navbar on mobile devices is not included in 100vh */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+
+/* Avoid text overflow */
+p,
+h1 {
+  overflow-wrap: break-word;
+  /* optional */
+}
+
+/* Important to check for
+    @media (prefers-reduced-motion: reduce) {}
+    and change the animation for those with this preference
+    instead of eliminating the animation so they have a less
+    engaging experience
+*/
+/* -----End Reset----- */
+:root {
+  --color-primary-darker: hsl(246, 38%, 0%);
+  --color-primary-darker-h: 246;
+  --color-primary-darker-s: 38%;
+  --color-primary-darker-l: 0%;
+  --color-primary-dark: hsl(246, 38%, 8%);
+  --color-primary-dark-h: 246;
+  --color-primary-dark-s: 38%;
+  --color-primary-dark-l: 8%;
+  --color-primary: hsl(246, 38%, 16%);
+  --color-primary-h: 246;
+  --color-primary-s: 38%;
+  --color-primary-l: 16%;
+  --color-primary-light: hsl(246, 38%, 26%);
+  --color-primary-light-h: 246;
+  --color-primary-light-s: 38%;
+  --color-primary-light-l: 26%;
+  --color-primary-lighter: hsl(246, 38%, 36%);
+  --color-primary-lighter-h: 246;
+  --color-primary-lighter-s: 38%;
+  --color-primary-lighter-l: 36%;
+  --color-accent-darker: hsl(277, 64%, 41%);
+  --color-accent-darker-h: 277;
+  --color-accent-darker-s: 64%;
+  --color-accent-darker-l: 41%;
+  --color-accent-dark: hsl(277, 64%, 51%);
+  --color-accent-dark-h: 277;
+  --color-accent-dark-s: 64%;
+  --color-accent-dark-l: 51%;
+  --color-accent: hsl(277, 64%, 61%);
+  --color-accent-h: 277;
+  --color-accent-s: 64%;
+  --color-accent-l: 61%;
+  --color-accent-light: hsl(277, 64%, 71%);
+  --color-accent-light-h: 277;
+  --color-accent-light-s: 64%;
+  --color-accent-light-l: 71%;
+  --color-accent-lighter: hsl(277, 64%, 81%);
+  --color-accent-lighter-h: 277;
+  --color-accent-lighter-s: 64%;
+  --color-accent-lighter-l: 81%;
+  --color-blue-darker: hsl(246, 50%, 0%);
+  --color-blue-darker-h: 246;
+  --color-blue-darker-s: 50%;
+  --color-blue-darker-l: 0%;
+  --color-blue-dark: hsl(246, 50%, 6%);
+  --color-blue-dark-h: 246;
+  --color-blue-dark-s: 50%;
+  --color-blue-dark-l: 6%;
+  --color-blue: hsl(246, 38%, 16%);
+  --color-blue-h: 246;
+  --color-blue-s: 38%;
+  --color-blue-l: 16%;
+  --color-blue-light: hsl(246, 50%, 26%);
+  --color-blue-light-h: 246;
+  --color-blue-light-s: 50%;
+  --color-blue-light-l: 26%;
+  --color-blue-lighter: hsl(246, 50%, 36%);
+  --color-blue-lighter-h: 246;
+  --color-blue-lighter-s: 50%;
+  --color-blue-lighter-l: 36%;
+  --color-black: hsl(204, 28%, 7%);
+  --color-black-h: 204;
+  --color-black-s: 28%;
+  --color-black-l: 7%;
+  --color-white: hsl(0, 0%, 100%);
+  --color-white-h: 0;
+  --color-white-s: 0%;
+  --color-white-l: 100%;
+  --color-white-dark: hsl(0, 0%, 75%);
+  --color-white-dark-h: 0;
+  --color-white-dark-s: 0%;
+  --color-white-dark-l: 75%;
+  --color-white-darker: hsl(0, 0%, 60%);
+  --color-white-darker-h: 0;
+  --color-white-darker-s: 0%;
+  --color-white-darker-l: 60%;
+  --color-bg-darker: hsl(233, 50%, 0%);
+  --color-bg-darker-h: 233;
+  --color-bg-darker-s: 50%;
+  --color-bg-darker-l: 0%;
+  --color-bg-dark: hsl(233, 50%, 4%);
+  --color-bg-dark-h: 233;
+  --color-bg-dark-s: 50%;
+  --color-bg-dark-l: 4%;
+  --color-bg: hsl(233, 50%, 7%);
+  --color-bg-h: 233;
+  --color-bg-s: 50%;
+  --color-bg-l: 7%;
+  --color-bg-light: hsl(233, 50%, 17%);
+  --color-bg-light-h: 233;
+  --color-bg-light-s: 50%;
+  --color-bg-light-l: 17%;
+  --color-bg-lighter: hsl(233, 50%, 27%);
+  --color-bg-lighter-h: 233;
+  --color-bg-lighter-s: 50%;
+  --color-bg-lighter-l: 27%;
+  --color-contrast-lower: hsl(180, 1%, 84%);
+  --color-contrast-lower-h: 180;
+  --color-contrast-lower-s: 1%;
+  --color-contrast-lower-l: 84%;
+  --color-contrast-low: hsl(210, 2%, 64%);
+  --color-contrast-low-h: 210;
+  --color-contrast-low-s: 2%;
+  --color-contrast-low-l: 64%;
+  --color-contrast-medium: hsl(204, 2%, 46%);
+  --color-contrast-medium-h: 204;
+  --color-contrast-medium-s: 2%;
+  --color-contrast-medium-l: 46%;
+  --color-contrast-high: hsl(210, 7%, 21%);
+  --color-contrast-high-h: 210;
+  --color-contrast-high-s: 7%;
+  --color-contrast-high-l: 21%;
+  --color-contrast-higher: hsl(204, 28%, 7%);
+  --color-contrast-higher-h: 204;
+  --color-contrast-higher-s: 28%;
+  --color-contrast-higher-l: 7%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --space-4xs: clamp(0.13rem, calc(0.13rem + 0.00vw), 0.13rem);
+  --space-3xs: clamp(0.25rem, calc(0.25rem + 0.00vw), 0.25rem);
+  --space-2xs: clamp(0.50rem, calc(0.50rem + 0.00vw), 0.50rem);
+  --space-xs: clamp(0.69rem, calc(0.67rem + 0.09vw), 0.75rem);
+  --space-s: clamp(0.94rem, calc(0.92rem + 0.09vw), 1.00rem);
+  --space-md: clamp(1.44rem, calc(1.42rem + 0.09vw), 1.50rem);
+  --space-lg: clamp(1.88rem, calc(1.83rem + 0.19vw), 2.00rem);
+  --space-xl: clamp(2.81rem, calc(2.75rem + 0.28vw), 3.00rem);
+  --space-2xl: clamp(3.31rem, calc(3.25rem + 0.28vw), 3.50rem);
+  --space-3xl: clamp(4.94rem, calc(4.83rem + 0.47vw), 5.25rem);
+  --space-4xl: clamp(5.63rem, calc(5.49rem + 0.56vw), 6.00rem);
+  --space-5xl: clamp(8.00rem, calc(7.82rem + 0.75vw), 8.50rem);
+  /* One-up pairs */
+  --space-4xs-3xs: clamp(0.13rem, calc(0.08rem + 0.19vw), 0.25rem);
+  --space-3xs-2xs: clamp(0.25rem, calc(0.16rem + 0.38vw), 0.50rem);
+  --space-2xs-xs: clamp(0.50rem, calc(0.41rem + 0.38vw), 0.75rem);
+  --space-xs-s: clamp(0.69rem, calc(0.58rem + 0.47vw), 1.00rem);
+  --space-s-md: clamp(0.94rem, calc(0.74rem + 0.85vw), 1.50rem);
+  --space-md-lg: clamp(1.44rem, calc(1.24rem + 0.85vw), 2.00rem);
+  --space-lg-xl: clamp(1.88rem, calc(1.48rem + 1.69vw), 3.00rem);
+  --space-xl-2xl: clamp(2.81rem, calc(2.57rem + 1.03vw), 3.50rem);
+  --space-2xl-3xl: clamp(3.31rem, calc(2.63rem + 2.91vw), 5.25rem);
+  --space-3xl-4xl: clamp(4.94rem, calc(4.56rem + 1.60vw), 6.00rem);
+  /* Custom pairs */
+  --space-l-3xl: clamp(1.88rem, calc(0.69rem + 5.07vw), 5.25rem);
+  --space-l-4xl: clamp(1.88rem, calc(0.42rem + 6.20vw), 6.00rem);
+  --space-m-3xl: clamp(1.44rem, calc(0.10rem + 5.73vw), 5.25rem);
+  --space-m-4xl: clamp(1.44rem, calc(-0.17rem + 6.85vw), 6.00rem);
+  --space-m-5xl: clamp(1.44rem, calc(-1.05rem + 10.61vw), 8.50rem);
+  --space-l-5xl: clamp(1.88rem, calc(-0.46rem + 9.95vw), 8.50rem);
+  --component-padding: var(--space-md);
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v11-latin/inter-v11-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/inter-v11-latin/inter-v11-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v11-latin/inter-v11-latin-regular.woff2") format("woff2"), url("../fonts/inter-v11-latin/inter-v11-latin-regular.woff") format("woff"), url("../fonts/inter-v11-latin/inter-v11-latin-regular.ttf") format("truetype"), url("../fonts/inter-v11-latin/inter-v11-latin-regular.svg#Inter") format("svg");
+  /* Legacy iOS */
+}
+/* inter-900 - latin */
+@font-face {
+  font-family: "Inter";
+  font-style: bold;
+  font-weight: 700;
+  src: url("../fonts/inter-v11-latin/inter-v11-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/inter-v11-latin/inter-v11-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v11-latin/inter-v11-latin-700.woff2") format("woff2"), url("../fonts/inter-v11-latin/inter-v11-latin7900.woff") format("woff"), url("../fonts/inter-v11-latin/inter-v11-latin-700.ttf") format("truetype"), url("../fonts/inter-v11-latin/inter-v11-latin-700.svg#Inter") format("svg");
+  /* Legacy iOS */
+}
+:root {
+  --font-sans: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif;
+  --font-primary: Inter, var(--font-sans);
+  --text-base-size: 0.9375rem;
+  --body-line-height: 1.667;
+  --heading-line-height: 1.1;
+  --font-primary-capital-letter: 1;
+  --text-unit: var(--text-base-size);
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+  --fw-black: 900;
+}
+
+:root, * {
+  --text-xs: clamp(0.56rem, calc(0.61rem + -0.06vw), 0.60rem);
+  --text-sm: clamp(0.75rem, calc(0.75rem + 0.00vw), 0.75rem);
+  --text-md: clamp(0.94rem, calc(0.92rem + 0.09vw), 1.00rem);
+  --text-lg: clamp(1.17rem, calc(1.12rem + 0.24vw), 1.33rem);
+  --text-xl: clamp(1.47rem, calc(1.36rem + 0.47vw), 1.78rem);
+  --text-xxl: clamp(1.83rem, calc(1.64rem + 0.81vw), 2.37rem);
+  --text-xxxl: clamp(2.29rem, calc(1.98rem + 1.31vw), 3.16rem);
+  --text-xxxxl: clamp(2.86rem, calc(2.39rem + 2.02vw), 4.21rem);
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--text-base-size);
+  font-weight: var(--fw-normal);
+  line-height: var(--body-line-height);
+  color: var(--color-white-dark);
+}
+
+h1 {
+  line-height: var(--heading-line-height);
+}
+
+:root {
+  --radius: 0.5rem;
+  --radius-sm: calc(var(--radius)/2);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius)*2);
+  --border-1: 1px;
+  --border-2: 2px;
+  --border-4: 4px;
+}
+
+:root {
+  --duration-fast: 200ms;
+  --duration-med: 300ms;
+  --duration-slow: 600ms;
+}
+
+:root {
+  --measure: 40ch;
+}
+
+* {
+  max-inline-size: var(--measure);
+}
+
+html,
+body,
+div,
+h1 {
+  max-inline-size: none;
+}
+
+:root {
+  --shadow-xs: 0 0.1px 0.3px rgba(0, 0, 0, 0.06),
+    0 1px 2px rgba(0, 0, 0, 0.12);
+  --shadow-sm: 0 0.3px 0.4px rgba(0, 0, 0, 0.025),
+    0 0.9px 1.5px rgba(0, 0, 0, 0.05),
+    0 3.5px 6px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 0.9px 1.5px rgba(0, 0, 0, 0.03),
+    0 3.1px 5.5px rgba(0, 0, 0, 0.08),
+    0 14px 25px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 1.2px 1.9px -1px rgba(0, 0, 0, 0.014),
+    0 3.3px 5.3px -1px rgba(0, 0, 0, 0.038),
+    0 8.5px 12.7px -1px rgba(0, 0, 0, 0.085),
+    0 30px 42px -1px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 1.5px 2.1px -6px rgba(0, 0, 0, 0.012),
+    0 3.6px 5.2px -6px rgba(0, 0, 0, 0.035),
+    0 7.3px 10.6px -6px rgba(0, 0, 0, 0.07),
+    0 16.2px 21.9px -6px rgba(0, 0, 0, 0.117),
+    0 46px 60px -6px rgba(0, 0, 0, 0.2);
+  --inner-glow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.075);
+  --inner-glow-top: inset 0 1px 0.5px hsla(0, 0%, 100%, 0.075);
+}
+
+:root {
+  --z-index-header: 3;
+  --z-index-popover: 5;
+  --z-index-fixed-element: 10;
+  --z-index-overlay: 15;
+  --z-index-important: 2147483647;
+}
+
+:root {
+  --display: block;
+}
+/* content made available only to screen readers */
+
+/* focusable, visually hidden element */
+[class^=aspect-ratio],
+[class*=" aspect-ratio"] {
+  --aspect-ratio: calc(16/9);
+  position: relative;
+  height: 0;
+  padding-bottom: calc(100% / (var(--aspect-ratio)));
+}
+[class^=aspect-ratio] > *,
+[class*=" aspect-ratio"] > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+[class^=aspect-ratio] > *:not(iframe),
+[class*=" aspect-ratio"] > *:not(iframe) {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+
+[class^=bg-],
+[class*=" bg-"] {
+  --bg-o: 1;
+}
+
+.bg-default {
+  background-color: hsla(var(--color-bg-h), var(--color-bg-s), var(--color-bg-l), var(--bg-o));
+}
+
+.bg-primary {
+  background-color: hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), var(--bg-o, 1));
+}
+
+[class^=border-],
+[class*=" border-"] {
+  --border-o: 1;
+}
+
+[class^=color-],
+[class*=" color-"] {
+  --color-o: 1;
+}
+
+.color-white {
+  color: hsla(var(--color-white-h), var(--color-white-s), var(--color-white-l), var(--color-o, 1));
+}
+
+.color-accent {
+  color: hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), var(--color-o, 1));
+}
+
+.color-white {
+  color: hsla(var(--color-white-h), var(--color-white-s), var(--color-white-l), var(--color-o, 1));
+}
+:where(.inner-glow, .inner-glow-top)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.text-300 {
+  font-size: var(--text-sm, 0.75rem);
+}
+
+.text-600 {
+  font-size: var(--text-xl, 1.375rem);
+}
+
+.text-700 {
+  font-size: var(--text-xxl, 1.75rem);
+}
+
+.font-bold {
+  font-weight: var(--fw-bold);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+[class^=color-gradient], [class*=" color-gradient"] {
+  color: transparent !important;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+[class^=flip], [class*=" flip"],
+[class^=-rotate], [class*=" -rotate"],
+[class^=rotate], [class*=" rotate"],
+[class^=-translate], [class*=" -translate"],
+[class^=translate], [class*=" translate"],
+[class^=-scale], [class*=" -scale"],
+[class^=scale], [class*=" scale"],
+[class^=-skew], [class*=" -skew"] [class^=skew],
+[class*=" skew"] {
+  --translate: 0;
+  --rotate: 0;
+  --skew: 0;
+  --scale: 1;
+  transform: translate3d(var(--translate-x, var(--translate)), var(--translate-y, var(--translate)), var(--translate-z, 0)) rotateX(var(--rotate-x, 0)) rotateY(var(--rotate-y, 0)) rotateZ(var(--rotate-z, var(--rotate))) skewX(var(--skew-x, var(--skew))) skewY(var(--skew-y, 0)) scaleX(var(--scale-x, var(--scale))) scaleY(var(--scale-y, var(--scale)));
+}
+
+.visible {
+  visibility: visible;
+}
+
+.width-100\% {
+  width: 100%;
+}
+
+.height-100\% {
+  height: 100%;
+}
+
+:root {
+  --max-width-xxxxs: 20rem;
+  --max-width-xxxs: 26rem;
+  --max-width-xxs: 32rem;
+  --max-width-xs: 38rem;
+  --max-width-sm: 48rem;
+  --max-width-md: 64rem;
+  --max-width-lg: 80rem;
+  --max-width-xl: 90rem;
+  --max-width-xxl: 100rem;
+  --max-width-xxxl: 120rem;
+  --max-width-xxxxl: 150rem;
+}
+
+.center {
+  box-sizing: content-box;
+  margin-inline: auto;
+  max-inline-size: var(--measure);
+}
+
+.icon {
+  height: 0.75em;
+  height: 1cap;
+  width: 0.75em;
+  width: 1cap;
+}
+
+/* when first letter is lower case */
+
+/* goes on wrapper element that contains the text */
+
+/* for when we don't need any gap between the holding container and the imposter */
+
+/* when we want space between the content and the container */
+
+/* Use pseudo element to add margin to the end of the reel */
+
+.with-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.with-sidebar > :last-child {
+  flex-grow: 1;
+  flex-basis: var(--max-sidebar-width, 20rem);
+}
+
+.with-sidebar > :first-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: var(--sidebar-min-width, 50%);
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* may not be necessary if the reset removes margins */
+.stack > * + * {
+  /* only affects direct children */
+  /* for a balanced flow the default space should match the line-height */
+  -webkit-margin-before: var(--stack-space, var(--space-s-md));
+          margin-block-start: var(--stack-space, var(--space-s-md));
+}
+
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* 👇 when the columns become rows */
+  --threshold: 30rem;
+}
+
+.switcher > * {
+  flex-grow: 1;
+  /* 👇 holy albatross */
+  flex-basis: calc((var(--threshold) - 100%) * 999);
+}
+
+.switcher > * > * {
+  /* 👇 ensures the children inside a flex item will not
+  exceed the width of the parent (optional) */
+  max-inline-size: 100%;
+}
+
+/* 👇 Controls how many horizontal items per row
+    by switching when the number of flex items
+    equals the value x as in  n + x 👈  below
+    The number of columns is x - 1.
+*/
+/* Use one of these to control the number of items per row
+   by setting the value in a data attribute data-max-col
+*/
+
+.home {
+  padding-inline: var(--space-m-5xl);
+  padding-block: var(--space-2xl);
+  display: grid;
+}
+.home .wrapper {
+  margin: auto;
+  max-width: 69rem;
+  text-align: center;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.home .with-sidebar > .header-image {
+  --sidebar-min-width: 28%;
+}
+.home .header-image {
+  position: relative;
+  min-height: 240px;
+}
+.home .header-image::after, .home .header-image::before {
+  content: "";
+  position: absolute;
+  display: block;
+  inset: 0;
+  z-index: 1;
+}
+.home .header-image::before {
+  background-color: hsl(277deg, 55%, 50%);
+  mix-blend-mode: multiply;
+}
+.home .header-image::after {
+  background-color: hsl(277deg, 20%, 18%);
+  mix-blend-mode: screen;
+}
+.home .with-sidebar > .content {
+  --max-sidebar-width: 36rem;
+}
+.home .content {
+  padding-inline: var(--space-m-3xl);
+  padding-block: var(--space-l-3xl);
+}
+.home .details.switcher {
+  --threshold: 19rem;
+}
+.home .stack > .details {
+  --stack-space: var(--space-l-3xl);
+}
+.home .details > .stack {
+  --stack-space: var(--space-4xs);
+}
+@media (min-width: 973px) {
+  .home .wrapper {
+    text-align: left;
+  }
+  .home .with-sidebar > .header-image {
+    order: 1;
+  }
+  .home .content p {
+    margin-inline: 0;
+  }
+}
