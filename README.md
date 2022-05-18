@@ -28,7 +28,7 @@ Could I apply CUBE CSS, Every Layout, Utopia and CodyHouse to make web developme
 ### Links
 
 - Solution URL: [https://github.com/helphop/Stats-Preview-Carde](https://github.com/helphop/Stats-Preview-Card)
-- Live Site URL: [https://helphop.github.io/Stats-Preview-Card/main/](https://helphop.github.io/Stats-Preview-Card/main/index.html)
+- Live Site URL: [https://helphop.github.io/Stats-Preview-Card/main/](https://helphop.github.io/Stats-Preview-Card/main/)
 
 ## My process
 I created scss files for layouts from Every Layout. I put these in a directory I called compositions under the css directory.
