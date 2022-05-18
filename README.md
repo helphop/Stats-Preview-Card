@@ -78,6 +78,8 @@ the number of classes I need to use to create my layouts.
 I learned how to apply a good balance of utility classes without cluttering up the HTML.
 
 I also found that using the primitive layout structures from Every Layout simplified the process of going from design to development. I find I am less overwhelmed with 'how am I going to do this' and more like 'oh that's a stack, and that's a switcher'.
+
+Finally as per the wisdom of Andy Bell and Heydon Pickering, coding a site from a design is NOT about pixel perfect results. We have no control over the devise the user will be viewing the website on.  Better to give the browser suggestions as to how to layout the site so that every user has a great experience.  This greatly reduces the amount and complexity of code while keeping the ability to be adaptable.
 ### Continued development
 
 I need more practice in using this combination of technologies, especially with more challenging designs.
