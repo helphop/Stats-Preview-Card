@@ -45,6 +45,8 @@ gulp.task('sass', function() {
     stream: true
   }));
 });
+
+
 // This task is used to combine all js files in a single scripts.min.js.
 gulp.task('scripts', function() {
   return gulp.src([utilJsPath+'/util.js', componentsJsPath])
@@ -86,12 +88,16 @@ var assetsFolder = 'dist/assets/';
 gulp.task('dist', async function(){
   // remove unused classes from the style.css file with PurgeCSS and copy it to the dist folder
   await purgeCSS();
+   // minify the CSS
+  await minifyCSS();
   // minify the scripts.js file and copy it to the dist folder
   await minifyJs();
   // copy any additional js files to the dist folder
   await moveJS();
-  // copy all the assets inside main/assets/img folder to the dist folder
+  // copy all the assets inside main/assets/images folder to the dist folder
   await moveAssets();
+  // copy all the assets inside main/assets/fonts folder to the dist folder
+  await moveFonts();
   // copy all html files inside main folder to the dist folder
   await moveContent();
   console.log('Distribution task completed!')
@@ -110,6 +116,19 @@ function purgeCSS() {
       defaultExtractor: content => content.match(/[\w-/:%@]+(?<!:)/g) || []
     }))
     .pipe(gulp.dest(distFolder+'/assets/css'));
+
+    stream.on('finish', function() {
+      resolve();
+    });
+  });
+};
+
+function minifyCSS() {
+  return new Promise(function(resolve, reject) {
+    var stream = gulp.src(distFolder+'/assets/css/style.css')
+      .pipe(rename('style.min.css'))
+      .pipe(cleanCSS())
+      .pipe(gulp.dest(distFolder+'/assets/css'));
 
     stream.on('finish', function() {
       resolve();
@@ -142,9 +161,18 @@ function moveJS() {
 
 function moveAssets() {
   return new Promise(function(resolve, reject) {
-    var stream = gulp.src(['main/assets/img/**'], { allowEmpty: true })
-    .pipe(gulp.dest(assetsFolder+'img'));
+    var stream = gulp.src(['main/assets/images/**'], { allowEmpty: true })
+    .pipe(gulp.dest(assetsFolder+'images'));
+    stream.on('finish', function() {
+      resolve();
+    });
+  });
+};
 
+function moveFonts() {
+  return new Promise(function(resolve, reject) {
+    var stream = gulp.src(['main/assets/fonts/**'], { allowEmpty: true })
+    .pipe(gulp.dest(assetsFolder+'fonts'));
     stream.on('finish', function() {
       resolve();
     });
