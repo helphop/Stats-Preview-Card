@@ -3,11 +3,11 @@
 .home {
   padding-inline: var(--space-m-5xl);
   padding-block: var(--space-2xl);
-  display: grid;
 
   main {
     display: grid;
     place-content: center;
+    min-height: 100%;
   }
 
   .wrapper {
