@@ -5,6 +5,11 @@
   padding-block: var(--space-2xl);
   display: grid;
 
+  main {
+    display: grid;
+    place-content: center;
+  }
+
   .wrapper {
     margin: auto;
     max-width: 69rem;
