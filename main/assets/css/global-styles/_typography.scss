@@ -74,7 +74,7 @@
 }
 
 :root, * {
-  // type scale
+  // type scale keep these for CodyHouse Utilities and Components
     --text-xs: clamp(0.56rem, calc(0.61rem + -0.06vw), 0.60rem); //200 | 9.6px -> 9.0px
     --text-sm: clamp(0.75rem, calc(0.75rem + 0.00vw), 0.75rem); //300 | 12px
     --text-md: clamp(0.94rem, calc(0.92rem + 0.09vw), 1.00rem); //400 | 15px -> 16px
@@ -83,6 +83,16 @@
     --text-xxl: clamp(1.83rem, calc(1.64rem + 0.81vw), 2.37rem); //700 | 29.30px -> 37.90px
     --text-xxxl: clamp(2.29rem, calc(1.98rem + 1.31vw), 3.16rem); //800 | 36.62px -> 50.52px
     --text-xxxxl: clamp(2.86rem, calc(2.39rem + 2.02vw), 4.21rem); //900 | 45.78px -> 67.34
+
+    // Use these for clarity about size
+    --text-200: var(--text-200);
+    --text-300: var(--text-sm);
+    --text-400: var(--text-md);
+    --text-500: var(--text-lg);
+    --text-600: var(--text-xl);
+    --text-700: var(--text-xxl);
+    --text-800: var(--text-xxxl);
+    --text-900: var(--text-xxxl);
 }
 
 
