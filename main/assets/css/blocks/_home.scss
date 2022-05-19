@@ -55,15 +55,15 @@
     padding-block: var(--space-l-3xl);
   }
 
-  .details.switcher {
+  .stats-preview.switcher {
     --threshold: 19rem;
   }
 
-  .stack > .details {
+  .stack > .stats-preview {
     --stack-space: var(--space-l-3xl);
   }
 
-  .details > .stack {
+  .stats-preview > .stack {
     --stack-space: var(--space-4xs);
   }
 
